@@ -1,0 +1,16 @@
+<%- include("partials/header") -%>
+
+<h1>Add Number</h1>
+
+<form action="/addNumber" class="item" method="POST">
+  <div class="form-group">
+    <label>Number 1</label>
+    <input type="text" class="form-control" name="userNum1">
+    <label>Number 2</label>
+    <input type="text" class="form-control" name="userNum2">
+  </div>
+  <button type="submit" class="btn btn-primary" name="button">Add</button>
+</form>
+<h2> <%= displaySum %> </h2>
+
+<%- include("partials/footer") -%>
